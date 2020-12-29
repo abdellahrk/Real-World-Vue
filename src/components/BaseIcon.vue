@@ -1,6 +1,8 @@
 <template>
     <div>
-        Icon
+        Icon here:
+        <slot></slot>
+        <slot name="description"></slot>
     </div>
 </template>
 
