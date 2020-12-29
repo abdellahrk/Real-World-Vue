@@ -4,7 +4,11 @@
             <router-link :to="{ name: 'event-show', params: { id : 1}}">
                 <span>@{{ event.time}} on {{ event.date }}</span>
                 <h4>{{ event.title }}</h4>
-                <span>{{ event.attendees.length }} attending</span>
+                <BaseIcon>
+                    {{ event.attendees.length }} attending
+                    <p slot="description">Some description goes here</p>
+                </BaseIcon>
+              
             </router-link> 
         </div>
     </div>
