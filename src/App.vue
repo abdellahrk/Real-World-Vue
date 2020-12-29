@@ -1,15 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link :to="{ name: 'event-list' }">List</router-link> |
-      <router-link :to="{ name: 'event-create'}">Create</router-link> |
-      <router-link :to="{ name: 'user', params: { username: 'Ramadan'}}">Ramadan</router-link>
-    </div>
+    <Navbar />
     <router-view />
   </div>
 </template>
 
 <style>
+
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,3 +30,13 @@
   color: #42b983;
 }
 </style>
+
+<script>
+import Navbar from '@/components/Navbar';
+
+export default {
+  components: {
+    Navbar,
+  }
+}
+</script>
